@@ -1,0 +1,32 @@
+  InsertItem (input: $input){
+         item{
+            id 
+            name
+            status
+            number_of_usage
+            description
+            category
+            color
+            size
+     }
+  }
+}
+
+mutation ($input: OwnerInput!) {
+  InsertOwner (input: $input){ 
+    owner{ 
+     id
+     owner_first_name
+     owner_last_name
+     
+     }
+  }
+}  
+     
+mutation delete_all_items {
+  delete_items (
+    where: {}
+  ) 
+  }
+}     
+    
