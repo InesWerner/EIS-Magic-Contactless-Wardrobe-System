@@ -1,0 +1,63 @@
+ mutation ($input: OwnerInput!) {
+ InsertItem (input: $input){
+         item{
+            id 
+            name
+            status
+            number_of_usage
+            description
+            category
+            color
+            size
+     }
+  }
+}
+
+mutation ($input: OwnerInput!) {
+  InsertOwner (input: $input){ 
+    owner{ 
+     id
+     owner_first_name
+     owner_last_name
+     
+     }
+  }
+}  
+     
+mutation delete_all_items {
+  delete_items (
+    where: {}
+  ) 
+  }
+     
+
+ mutation UpdateOwner($owner_first_name: String!, $owner_last_name: String!){
+   updateOwner(
+        input: {
+           $owner_first_name: String
+            $owner_last_name: String
+        }
+    )
+   
+ }
+ 
+  mutation UpdateItem($name: String!, $status: Boolean!, $number_of_usage: Int!, $description: String!, $category: Int!, $color: Int!, $size: Int!){
+   updateItem(
+        input: {
+           $name: String
+            $status: Boolean
+            $number_of_usage: Int
+            $description: String
+            $category: Int
+            $color: Int
+            $size: Int
+            
+        }
+    )
+   
+ }
+
+
+
+
+    
