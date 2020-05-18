@@ -1,4 +1,5 @@
-  InsertItem (input: $input){
+ mutation ($input: OwnerInput!) {
+ InsertItem (input: $input){
          item{
             id 
             name
