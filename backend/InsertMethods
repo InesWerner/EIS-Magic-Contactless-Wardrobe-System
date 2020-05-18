@@ -29,5 +29,35 @@ mutation delete_all_items {
     where: {}
   ) 
   }
-}     
+     
+
+ mutation UpdateOwner($owner_first_name: String!, $owner_last_name: String!){
+   updateOwner(
+        input: {
+           $owner_first_name: String
+            $owner_last_name: String
+        }
+    )
+   
+ }
+ 
+  mutation UpdateItem($name: String!, $status: Boolean!, $number_of_usage: Int!, $description: String!, $category: Int!, $color: Int!, $size: Int!){
+   updateItem(
+        input: {
+           $name: String
+            $status: Boolean
+            $number_of_usage: Int
+            $description: String
+            $category: Int
+            $color: Int
+            $size: Int
+            
+        }
+    )
+   
+ }
+
+
+
+
     
