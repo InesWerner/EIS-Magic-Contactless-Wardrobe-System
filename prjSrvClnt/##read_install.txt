@@ -1,0 +1,17 @@
+
+##Aufruf Server: node srv.js
+
+##Aufruf Client: http://192.168.2.128:4000
+
+##Installation
+sudo apt install nodejs
+
+npm -s install express
+npm -s install ws
+
+
+##Anzeige der Console im Firefox:
+Firefox-Menü->Web-Entwickler->Web-Console  und dort dann auf 'Log' klicken
+
+##Infos dazu:
+https://medium.com/@joekarlsson/complete-guide-to-node-client-server-communication-b156440c029
